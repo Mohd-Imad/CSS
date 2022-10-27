@@ -1,0 +1,21 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    background-color: aqua;
+    color: blueviolet;
+    text-transform: capitalize;
+    width: 50%;
+}
+
+#one{                     
+    background-color: antiquewhite;
+    color: red;
+    font-size: 1.5rem;
+}
+
+.two{
+    background-color: antiquewhite;
+    color: blue; 
+    font-size: 1.5rem;
+}

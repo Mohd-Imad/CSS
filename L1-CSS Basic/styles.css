@@ -1,0 +1,15 @@
+body{                 /*parent element*/
+    width: 100%;
+}
+h1{       
+    background-color: blanchedalmond;     
+    color: maroon;
+    width: 50%;    /*child element*/
+   /* text-transform: capitalize;      to capitalize first letter*/
+   text-transform: uppercase;
+}
+
+p{
+    background-color: aqua;
+    font-size: 1.3rem;
+}
