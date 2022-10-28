@@ -1,0 +1,40 @@
+/* Typography is the way that text is arranged and presented*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@1,300&family=Roboto:wght@500&display=swap');
+body{
+    padding: 10%;
+    font-size: 2rem;
+}
+
+input,button{
+    font: inherit;     /*this ll inherit from the parent element which is body*/
+}
+
+.one{
+    text-decoration:underline;      /*for underlining  the text*/
+    text-transform: capitalize;      /*for capitalize the first letter*/ 
+    text-align: justify;            /*here left align is by default*/
+    text-indent: 2em;               /*blank space at the starting of the paragraph*/
+    line-height: 1.5;               /*for line spacing*/
+    letter-spacing: 0.1rem;         /*for letter spacing*/
+    word-spacing: 0.5rem;           /*for word spacing*/
+    background-color: aqua;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#two{
+text-decoration: overline;         /*for lining over text*/
+font-weight: 600;                  /*this is for the bold text*/
+font-style: italic;                
+font-family: 'Roboto Condensed', sans-serif;;  /*here first one ll is first choice, if that fails it ll select the next fonts*/
+background-color: red;
+}
+.three{
+    text-decoration: line-through;
+    background-color: yellow;
+}
+
+a{
+    text-decoration: none;  /*this ll remove the underline from the link*/
+    background-color:aliceblue;
+}
