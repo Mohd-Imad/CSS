@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    padding: 10%;
+    font-size: 2rem;
+    font-family:'Roboto', sans-serif;
+}
+
+/* a{
+    text-decoration: none;
+    cursor: pointer;
+    color: blue;
+} */
+/* main{               
+    opacity: 0.3;
+} */
+a{
+    color: hsl(207, 44%, 49%);
+    opacity:0.5;
+}
+
+/*pseudo-classes*/
+  /* a:visited{                   this ll change the link color after visiting the link */
+    /* color: purple;
+}  */
+
+ a:hover, a:focus{                     /*on hover this ll change the link color*/
+    /* color: hsl(189, 44%, 49%); */
+    opacity:1;
+    background-color:gold ;
+}
+
+ a:active{                   /*change the color while clicking the link*/
+    color: red;
+}
+
+input:focus{                   /*alternate to onfocus event*/
+    background-color: orangered;
+}
+
+/* #text a{
+    display:inline-block;
+    height: 90px;
+    width: 100px;
+    background-color: aquamarine;
+    
+} */
+
+ 
+
