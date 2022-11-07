@@ -1,8 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 body{
-    padding: 2% 10%;
+    padding: 5% 10%;
     font-size: 2rem;
     font-family:'Roboto', sans-serif;
+    text-transform: capitalize;
 }
 
+ol{
+    list-style-type: upper-alpha;
+}
+
+ul{
+    text-align: center;                    
+    list-style-position: inside;  /*list points 'll be aligned as per the text,    outside---default*/
+    color: #00f;
+    line-height: 1.6;            /*line-spacing*/
+}
+
+ul{
+    /* list-style-image: url('......'); */
+    list-style: square url('..') inside;      /*this is shorthand property, if image fails list style 'll be square and position is inside*/    
+}
+
+ul li{
+    color: red;             /*this 'll over ride the blue color*/
+
+}
+
+ul li:nth-child(odd){             /*:nth-child(2)--pseudo-class selects the particular list,   instead of number we can also pass odd/even*/
+    color:#00f
+}
+
+ul ::marker{                  /*::marker--pseudo-element, using this only list point color 'll change to black color    */
+    color: black;
+}
+
+ol ::marker{                     /*::marker--pseudo-element, using this only list point color 'll change*/
+    color: green;
+    font-family: fantasy;
+    font-size: 1.2em;
+    content: "points >>";     /*points >> 'll be instead of normal points*/
+}

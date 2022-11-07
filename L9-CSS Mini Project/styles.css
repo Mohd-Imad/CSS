@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0.5rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+nav{
+    border: 2px solid #000;
+    border-radius: 2rem;
+    margin: 0 auto 1rem;
+    max-width: 500px;
+    font-size: 2rem;
+    line-height: 6rem;
+}
+
+h1{
+    padding: 2rem;
+    background-color: aqua;
+    border-radius: 2rem 2rem 0 0;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    border-top: 1px solid #000;
+}
+
+li a{
+    display: block;     /*here anchor element is Inline,so display:block-- to convert from an Inline element to Block level element*/
+}
+
+li a,
+li a:visited{
+    text-decoration: none;
+    color: #333;
+}
+
+li a:hover{
+    background: #333;
+    color: whitesmoke;
+    /* cursor: pointer; */
+}
+
+li:last-child a{
+    border-radius: 0 0 2rem 2rem;
+}
