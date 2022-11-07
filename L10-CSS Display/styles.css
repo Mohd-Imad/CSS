@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 2rem;
+    font-family: "Roboto",sans-serif;
+}
+
+/*Navbar*/
+ul{
+    list-style-type: none;
+    padding: 0.5rem;
+    background-color: #333;
+    text-align: right;
+    margin: 0;
+}
+
+li{
+    display: inline-block;
+    margin-inline: 0.5rem;
+    
+}
+
+li a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+li a:hover,li a:focus{
+    text-decoration: underline;
+}
+
+h1{
+    display:inline-block;              
+    text-transform: capitalize;
+    background: #333;
+    color: whitesmoke;
+    margin-top:50px;
+}
+
+/* main{                          -- Parent element
+    background-color: yellow;
+    width: 50%;                  
+} */
+
+p{                              /*Child element*/        
+    background-color: aqua;
+    /* margin: 100px 50px; */
+    margin-top: 50px;
+}
+/*Both main & p are block-level elements which occupies 100% width by-default*/
+/*As the width of parent ele is 50% ,then the child ele 'll occupy the 100% width of parent ele*/
+
+.opposite{
+    display: inline-block;         /*without display:inline-block-- margin, height won't be applicable*/
+    background-color: #333;
+    color: whitesmoke;
+    margin-top: 100px;
+    height: 150px; 
+    padding: 4rem;                /*without display:inline-block, padding 'll overlap on  the other contents*/
+}
+
