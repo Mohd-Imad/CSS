@@ -14,10 +14,26 @@ body{
 /*Navbar*/
 ul{
     list-style-type: none;
-    padding: 0.5rem;
+    padding: 1rem;
     background-color: #333;
     text-align: right;
     margin: 0;
+}
+
+.brand{
+    /* display: inline-block; */
+    text-decoration: none;
+    padding: 0;
+    margin-right: 65pc;
+    font-size: 2rem;
+    color: whitesmoke;
+}
+
+.brand:hover{
+    background-color: #fff;
+    color: #333;
+    /* border: 1px solid #333; */
+    padding: 0.5rem 0;
 }
 
 li{
