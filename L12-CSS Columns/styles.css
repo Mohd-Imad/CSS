@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+
+.columns{
+    /*column-count: 4;
+    column-width: 250px;*/       /*when the screen is compressed, the width 'll be 250px, not lesser than that*/
+    columns: 4 250px;    /*shorthand*/
+    column-rule: 3px solid #333;    /*line between the columns*/
+    column-gap: 3rem;            
+} 
+
+.columns p{
+    margin-top: 0;
+}
+
+.columns h2{
+    margin-top: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    break-inside: avoid;       /*when we compress the screen, content part 'll divided in two coloumns*/
+                               /*to avoid the above problem we use break-inside prop*/
+}
+
+.columns .quote{
+    font-size: 3rem;
+    text-align: center;
+    color: #333;
+    column-span:all;         /*used to span the content in all columns. This is used mostly for displaying quotes or some imp text*/
+    margin-top: 2rem;
+}
+
+.nowrap{
+    white-space: nowrap;
+}
