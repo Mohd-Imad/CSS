@@ -12,12 +12,18 @@ body{
     min-height: 200vh;
 }
 
+h1{
+    display: inline-block;
+    background-color: #333;
+    color:whitesmoke
+}
+
 .outer-container{
     border: 3px dashed #333;
     width: 400px;
     height: 600px;
     margin: 70px auto;
-    position: relative;
+    /* position: relative; */
 }
 
 .inner-container{
@@ -25,12 +31,12 @@ body{
     width: 240px;
     height: 350px;
     margin: 190px auto;
-    position: relative;
+    /* position: relative; */
 }
 
 .box{
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     color: #fff;
     padding: 1rem;
 }
@@ -38,6 +44,29 @@ body{
 .absolute{
     background-color: #00f;
     position: absolute;
-    top: 0;
+    top: 0; 
     left: 0;
+    /* right: 0;
+    bottom: 0; */
+    z-index: 1;                 /*overlaps on the other box*/
+}
+
+.relative{
+    background-color: #f00;
+    position: relative;
+    top: 300px;
+    left: 100px;
+}
+
+.fixed{
+    background-color: green;
+    position: fixed;                /*even after scrolling it won't change its position*/
+    top: 100px;
+    left: 80px;
+}
+
+.sticky{
+    background-color: #000;
+    position: sticky;
+    top: 0;
 }
