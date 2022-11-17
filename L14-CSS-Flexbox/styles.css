@@ -13,21 +13,27 @@ body {
     padding: 20px;
 }
 
-.container{
+.container{                   /*parent element*/
     max-width: 800px;
     min-height:400px;
     margin-inline: auto;
     border: 1px solid black;
+    gap: 1rem;
     display: flex;
+    justify-content: center;     /*for aligning horizontally(--)*/
+    align-items:center;          /* for aligning vertically(|) */
+    flex-direction: row-reverse;      /*align items in row format and display content in revrese order*/
+    flex-wrap: wrap;
 }
 
-.box{
+.box{                           /*child element*/
     min-width: 100px;
-    min-height: 100px;
+    height: 100px;
     background-color: #000;
     color: #fff;
     font-size: 2rem;
     padding: 0.5rem;
+    border: 1px solid white;
 }
 
 
