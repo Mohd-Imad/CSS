@@ -22,8 +22,9 @@ body {
     display: flex;
     justify-content: center;     /*for aligning horizontally(--)*/
     align-items:center;          /* for aligning vertically(|) */
-    flex-direction: row-reverse;      /*align items in row format and display content in revrese order*/
-    flex-wrap: wrap;
+    /*flex-direction: row-reverse;      align items in row format and display content in revrese order*/
+    flex-wrap:wrap-reverse
+    /* flex-flow: row wrap;           shorthand for direction and wrap */
 }
 
 .box{                           /*child element*/
@@ -35,6 +36,5 @@ body {
     padding: 0.5rem;
     border: 1px solid white;
 }
-
 
 
