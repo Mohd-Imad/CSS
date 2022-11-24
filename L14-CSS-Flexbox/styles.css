@@ -23,18 +23,36 @@ body {
     justify-content: center;     /*for aligning horizontally(--)*/
     align-items:center;          /* for aligning vertically(|) */
     /*flex-direction: row-reverse;      align items in row format and display content in revrese order*/
-    flex-wrap:wrap-reverse
-    /* flex-flow: row wrap;           shorthand for direction and wrap */
+    /* flex-wrap:wrap-reverse */
+    flex-flow: row nowrap;          /* shorthand for direction and wrap */
+    align-content:center ;
 }
 
 .box{                           /*child element*/
-    min-width: 100px;
+    /* min-width: 100px; */
     height: 100px;
     background-color: #000;
     color: #fff;
     font-size: 2rem;
     padding: 0.5rem;
     border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 150px;
+    /* flex: 1 1 150px;    shorthand for grow,shrink,basis */
+}
+
+.box:nth-child(2){
+    /* flex-basis: 150px;
+    flex-grow: 2;
+    flex-shrink: 2; */
+    flex: 1 1 150px;    /*shorthand for grow,shrink,basis*/
+
 }
 
 
